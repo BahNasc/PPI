@@ -1,0 +1,14 @@
+/* Regra Externa */
+p {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Regra Interna */
+p.destaque {
+    font-size: 20px;
+    color: blue;
+}
+
+/* Regra Inline */
+/* <p style = "font-size: 24px; color: red;"> Este parágrafo tem estilo inline.</p> */

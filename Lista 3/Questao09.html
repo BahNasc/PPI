@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .barra {
+            width: 332px;
+            height: 200px;
+            display: inline-block;
+            line-height: 180px;
+            text-align: center;
+        }
+
+        .barra.roxa {
+            background-color: rgb(99, 13, 179);
+        }
+
+        .barra.vermelha {
+            background-color: rgb(21, 168, 41);
+        }
+
+        .barra.verde {
+            background-color: rgb(212, 13, 13);
+        }
+
+        .barra.azul {
+            background-color: rgb(253, 250, 50);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="barra roxa">
+            <p> 1 </p>
+        </div>
+        <div class="barra vermelha">
+            <p> 2 </p>
+        </div>
+        <div class="barra verde">
+            <p> 3 </p>
+        </div>
+        <div class="barra azul">
+            <p> 4 </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Questao 09
+display: inline;
+Quando um elemento tem a propriedade display definida como inline, ele se comporta como parte do fluxo de texto, 
+ocupando apenas o espaço necessário dentro do conteúdo. Elementos inline não respeitam propriedades de dimensões 
+(como largura e altura) e margens nas direções vertical (topo e base), apenas horizontal (esquerda e direita).
+
+display: block;
+Quando um elemento tem a propriedade display definida como block, ele se comporta como um bloco independente que 
+ocupa a largura completa do seu contêiner pai. Elementos block aceitam configurações de largura, altura, margens 
+e padding tanto na horizontal quanto na vertical.
+
+display: inline-block;
+A propriedade display: inline-block combina características de elementos inline e block. Ela permite que o elemento 
+ocupe apenas o espaço necessário no conteúdo, como elementos inline, mas também aceita dimensões e propriedades de 
+posicionamento, como elementos block.
+
+Essas opções para a propriedade display são amplamente utilizadas para controlar o layout e a formatação de elementos HTML.
+ -->

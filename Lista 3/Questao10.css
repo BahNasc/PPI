@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10;
+    background-color: rgb(83, 153, 180);
+}
+.container{
+    display: flex;
+    gap: 10px; /* Define o espaçamento entre os botões */
+    margin-top: 20px;
+   
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #94afbd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  
+}
+
+.botao:hover {
+    background-color: #9ca5aa;
+}
+.titulo {
+    position: absolute;
+    top: 50px; /* Ajuste a posição vertical do título */
+    left: 20px; /* Ajuste a posição horizontal do título */
+    color: rgb(0, 0, 0);
+     }
+     .titulo2 {
+        position: absolute;
+        top: 120px; /* Ajuste a posição vertical do título */
+        left: 50px; /* Ajuste a posição horizontal do título */
+        color: rgb(23, 24, 95);
+         }
+         .imagem {
+            position: absolute;
+            margin-bottom: 10px; /* Define a margem abaixo da imagem */
+            border-radius: 30px;
+            width: 350px;
+            height: 200px;
+            top: 200px; /* Ajuste a posição vertical do título */
+            left: 500px; /* Ajuste a posição horizontal do título*/
+         }
+        .texto{
+            position: absolute;
+            top: 435px; /* Posição vertical */
+            left: 100px; /* Posição horizontal */
+            font-size: 20px;
+        }
+       
+        

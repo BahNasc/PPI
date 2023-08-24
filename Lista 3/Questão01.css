@@ -1,0 +1,23 @@
+ /* Questão 1 
+ Uma regra CSS consiste em um seletor e um conjunto de propriedades com seus respectivos valores. O seletor 
+    define a qual elemento HTML as propriedades se aplicam, e as propriedades especificam como esse elemento 
+    deve ser estilizado.
+
+    Uma propriedade em CSS é um atributo que define características de estilo para um elemento HTML. Elas podem 
+    controlar coisas como cores, tamanhos de fonte, margens, preenchimentos, bordas, etc.
+*/ 
+
+/*sintaxe do css 
+
+ seletor {
+    propriedade: valor;
+    outras propriedades e valores 
+} */
+
+/*Incorporando CSS em documentos HTML:
+
+Inline: Você pode incluir estilos diretamente no elemento HTML usando o atributo style. 
+Internal: Você pode incluir estilos dentro da seção <style> no cabeçalho do documento HTML. Isso permite definir estilos para todo o documento. 
+External: Você pode criar um arquivo CSS separado com extensão .css e vinculá-lo ao documento HTML usando a tag <link> no cabeçalho. Isso é útil 
+para manter a separação entre conteúdo e estilo. */
+
