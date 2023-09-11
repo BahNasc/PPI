@@ -1,0 +1,54 @@
+.bandeira{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    border: 1px solid;
+}
+.japao{
+    justify-content: center;
+    align-items: center;
+}
+circle{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.bandeira.br{
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    border: 1px solid;
+}
+circle.bandeira.br{
+    position: absolute;
+    background-color: rgb(4, 27, 128);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.triangulo-lado-esquerdo{
+    width: 0px;
+    height: 0px;
+    border: 90px solid;
+    border-top-color: transparent ;
+    border-bottom-color: transparent;
+    border-right-width: 150px;
+    border-left-color: transparent;
+    border-right-color: yellow;
+    
+}
+.triangulo-lado-direito{
+    width: 0px;
+    height: 0px;
+    border: 90px solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-width: 150px;
+    border-left-color: yellow;
+    border-right-color: transparent;
+    
+}
