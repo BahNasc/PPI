@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #canto-superior-esquerdo {
+            background-color: #FF5733; /* Laranja */
+            top: 0;
+            left: 0;
+        }
+
+        #canto-superior-direito {
+            background-color: #3498DB; /* Azul */
+            top: 0;
+            right: 0;
+        }
+
+        #canto-inferior-esquerdo {
+            background-color: #E74C3C; /* Vermelho */
+            bottom: 0;
+            left: 0;
+        }
+
+        #canto-inferior-direito {
+            background-color: #27AE60; /* Verde */
+            bottom: 0;
+            right: 0;
+        }
+
+        #centro {
+            background-color: #F1C40F; /* Amarelo */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="canto-superior-esquerdo"></div>
+    <div class="box" id="canto-superior-direito"></div>
+    <div class="box" id="canto-inferior-esquerdo"></div>
+    <div class="box" id="canto-inferior-direito"></div>
+    <div class="box" id="centro"></div>
+</body>
+</html>
