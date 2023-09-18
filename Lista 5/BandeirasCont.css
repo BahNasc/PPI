@@ -1,0 +1,72 @@
+/* bandeira italia */
+body {
+    display: flex;
+    height: 200vh;
+    margin: 3px;
+    background-color: white;
+}
+
+.flag {
+    outline: 1px solid black;
+    display: flex;
+    width: 400px; 
+    height: 200px; 
+}
+
+.green {
+    flex: 1;
+    background-color: #009246;
+}
+
+.white {
+    flex: 1;
+    background-color: #ffffff; 
+}
+
+.red {
+    flex: 1;
+    background-color: #ce2b37; 
+}
+
+/* bandeira japao */
+.bandeira {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+.bola {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(188, 0, 45);
+    border-radius: 50%;
+}
+
+/* bandeira holanda */
+
+.bandeiraHolanda{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    border: 1px solid black; 
+}
+
+.vermelho {
+    flex: 1;
+    background-color: #21468B;
+}
+
+.branco {
+    flex: 1;
+    background-color: #FFFFFF; 
+}
+
+.azul {
+    flex: 1;
+    background-color: #AE1C28; 
+}
