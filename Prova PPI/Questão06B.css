@@ -1,0 +1,23 @@
+.bandeira{
+    width: 400px;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.circulo{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.circulo-azul{
+    background-color: rgb(25, 0, 255);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}

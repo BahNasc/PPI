@@ -1,0 +1,46 @@
+.container{
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    grid-template-areas:
+     "navegacao  cabecalho cabecalho"
+     "navegacao  conteudo  conteudo"
+     "navegacao  rodape   rodape";
+  }
+  .box{
+      text-align: center;
+      outline: 1px solid;
+  }
+  #box-navegacao{
+      grid-area: navegacao;
+      background-color: orange;
+      height: 100vh;
+      width: 50vh;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+  }
+  #box-cabecalho{
+      grid-area: cabecalho;
+      background-color: rgb(91, 153, 72) ;
+      color: white;
+      height: 20vh;
+      width: 137vh;
+ 
+  }
+  #box-conteudo{
+      grid-area: conteudo;
+      background-color: royalblue;
+      color: white;
+      height: 60vh;
+      width: 137vh;
+  }
+  #box-rodape{
+       grid-area: rodape;
+       background-color: rgb(32, 155, 255);
+       color: white;
+       height: 20vh;
+       width: 137vh;
+  }
+
