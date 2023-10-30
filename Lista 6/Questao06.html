@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de Paleta de Cores</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #colorPalette {
+            display: flex;
+        }
+
+        .colorBox {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+  <button id="generateButton">Gerar Paleta de Cores</button>
+
+    <div id="colorPalette"></div>
+
+    <script>
+        const colorPalette = document.getElementById("colorPalette");
+        const generateButton = document.getElementById("generateButton");
+
+        // Função para gerar uma cor aleatória em formato hexadecimal
+        function generateRandomColor() {
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            return randomColor;
+        }
+
+        // Função para gerar a paleta de cores
+        function generateColorPalette() {
+            colorPalette.innerHTML = ''; // Limpa a paleta de cores
+
+            for (let i = 0; i < 5; i++) {
+                const colorBox = document.createElement("div");
+                colorBox.className = "colorBox";
+                colorBox.style.backgroundColor = generateRandomColor();
+                colorPalette.appendChild(colorBox);
+            }
+        }
+
+        generateButton.addEventListener("click", generateColorPalette);
+        document.addEventListener("keydown", function(event) {
+            if (event.keyCode === 32) { // Tecla de espaço
+                generateColorPalette();
+            }
+        });
+    </script>
+</body>
+</html>

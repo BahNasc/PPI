@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Fatorial e Fibonacci</title>
+</head>
+<body>
+    <h1>Calculadora de Fatorial e Fibonacci</h1>
+
+    <label for="numberInput">Digite um número:</label>
+    <input type="number" id="numberInput">
+    
+    <button id="calculateFactorial">Calcular Fatorial</button>
+    <button id="calculateFibonacci">Calcular Fibonacci</button>
+    
+    <p id="result"></p>
+
+    <script>
+        // Função para calcular o fatorial de um número
+        function calculateFactorial(number) {
+            if (number < 0) {
+                return "Número negativo, fatorial não definido.";
+            }
+            if (number === 0 || number === 1) {
+                return 1;
+            }
+            return number * calculateFactorial(number - 1);
+        }
+
+        // Função para calcular a sequência de Fibonacci de um número
+        function calculateFibonacci(number) {
+            if (number <= 0) {
+                return "Número inválido para Fibonacci.";
+            }
+            let fibArray = [0, 1];
+            for (let i = 2; i <= number; i++) {
+                fibArray[i] = fibArray[i - 1] + fibArray[i - 2];
+            }
+            return fibArray.join(", ");
+        }
+
+        const calculateFactorialButton = document.getElementById("calculateFactorial");
+        const calculateFibonacciButton = document.getElementById("calculateFibonacci");
+        const numberInput = document.getElementById("numberInput");
+        const result = document.getElementById("result");
+
+        calculateFactorialButton.addEventListener("click", function() {
+            const num = parseInt(numberInput.value);
+            const factorial = calculateFactorial(num);
+            result.textContent = `O fatorial de ${num} é: ${factorial}`;
+        });
+
+        calculateFibonacciButton.addEventListener("click", function() {
+            const num = parseInt(numberInput.value);
+            const fibonacci = calculateFibonacci(num);
+            result.textContent = `A sequência de Fibonacci até ${num} é: ${fibonacci}`;
+        });
+    </script>
+</body>
+</html>
